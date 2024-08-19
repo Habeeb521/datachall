@@ -1,0 +1,9 @@
+FROM python:3.8-slim
+WORKDIR C:/Users/Khwaja Habeebullah/OneDrive/Desktop/pycode/problem1
+
+COPY . .
+
+EXPOSE 80
+
+
+CMD ["python", "fixed_width.py && python csv_convert.py"]
